@@ -33,3 +33,45 @@ It uses **machine learning and deep learning models** to identify anomalies in r
 ---
 
 ## 🏗️ System Architecture
+
+Simulated Power Data
+↓
+Attack Injection (FDIA)
+↓
+AI Models (RF + LSTM)
+↓
+ONNX Optimization
+↓
+FastAPI Backend
+↓
+Streamlit Dashboard (Real-Time Visualization)
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+### 2️⃣ Create Virtual Environment
+python -m venv myenv
+myenv\Scripts\activate   # Windows
+ ### 3️⃣ Install Dependencies
+pip install -r requirements.txt
+### ▶️ Running the Project
+Step 1: Generate Data
+python src/simulation/pmu_simulator.py
+Step 2: Inject Attacks
+python src/attacks/attack_simulator.py
+Step 3: Train Model
+python src/models/train_model.py
+Step 4: Convert to ONNX
+python src/optimization/onnx_converter.py
+Step 5: Train LSTM Model
+python src/models/lstm_model.py
+Step 6: Start API
+uvicorn src.api.app:app --reload
+Step 7: Run Dashboard
+streamlit run dashboard.py
