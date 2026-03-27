@@ -1,0 +1,10 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+fastapi
+uvicorn
+streamlit
+onnx
+onnxruntime
+tensorflow
