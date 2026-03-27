@@ -61,17 +61,17 @@ myenv\Scripts\activate   # Windows
  ### 3️⃣ Install Dependencies
 pip install -r requirements.txt
 ### ▶️ Running the Project
-Step 1: Generate Data
+#### Step 1: Generate Data
 python src/simulation/pmu_simulator.py
-Step 2: Inject Attacks
+#### Step 2: Inject Attacks
 python src/attacks/attack_simulator.py
-Step 3: Train Model
+#### Step 3: Train Model
 python src/models/train_model.py
-Step 4: Convert to ONNX
+#### Step 4: Convert to ONNX
 python src/optimization/onnx_converter.py
-Step 5: Train LSTM Model
+#### Step 5: Train LSTM Model
 python src/models/lstm_model.py
-Step 6: Start API
+#### Step 6: Start API
 uvicorn src.api.app:app --reload
-Step 7: Run Dashboard
+#### Step 7: Run Dashboard
 streamlit run dashboard.py
